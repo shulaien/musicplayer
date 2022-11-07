@@ -1,0 +1,160 @@
+/* 首部样式 */
+.header > .top {
+  height: 70px;
+  box-sizing: border-box;
+  background-color: #242424;
+  border-bottom: 1px solid #000;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  line-height: 69px;
+  height: 69px;
+}
+
+.topbar .bar-left {
+  display: flex;
+}
+
+.topbar .bar-left .logo {
+  background-image: url(../images/topbar-sprite.png);
+}
+
+.topbar .bar-left .list {
+  display: flex;
+}
+
+.topbar .bar-left .logo a {
+  display: block;
+  width: 157px;
+  padding-right: 20px;
+  text-indent: -9999px;
+}
+
+.topbar .bar-left .list .item {
+  position: relative;
+  display: block;
+  padding: 0 19px;
+  font-style: 14px;
+  color: #ccc;
+}
+
+.topbar .bar-left .list .item:hover,
+.topbar .bar-left .list .item.active {
+  color: #fff;
+  background-color: #000;
+}
+
+.topbar .bar-left .list .item.active::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 7px;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url(../images/topbar-sprite.png) -226px 0;
+}
+
+.topbar .bar-left .list .icon-hot {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  /* width: 28px;
+  height: 19px;
+  background: url(../images/topbar-sprite.png) -190px 0; */
+}
+
+/* 布局右边 */
+.topbar .bar-right {
+  display: flex;
+  padding-right: 22px;
+}
+
+.topbar .bar-right .login a {
+  color: #787878;
+}
+
+.topbar .bar-right .login:hover a {
+  color: #999;
+}
+
+.topbar .bar-right .login a:hover {
+  color: #787878;
+  text-decoration: underline;
+}
+
+.topbar .bar-right .author a {
+  display: inline-block;
+  width: 90px;
+  height: 32px;
+  margin: 0 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #ccc;
+  box-sizing: border-box;
+  border: 1px solid #4F4F4F;
+  border-radius: 20px;
+}
+
+.topbar .bar-right .author a:hover {
+  color: #fff;
+  border-color: #ccc;
+}
+
+.topbar .bar-right .search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 158px;
+  height: 32px;
+  box-sizing: border-box;
+  padding-right: 10px;
+  margin-top: 19px;
+  border-radius: 32px;
+  background: #fff url(../images/topbar-sprite.png) 0 -99px;
+}
+
+.topbar .bar-right .search input {
+  width: 115px;
+  font-size: 12px;
+}
+
+/* 导航栏布局 */
+.nav {
+  height: 35px;
+  line-height: 35px;
+  box-sizing: border-box;
+  background-color: #C20C0C;
+  border-bottom: 1px solid #a40011;
+}
+
+.navbar {
+  box-sizing: border-box;
+  padding-left: 180px;
+}
+
+.navbar .list {
+  display: flex;
+}
+
+.navbar .list .item {
+  display: inline-block;
+}
+
+.navbar .list .item span {
+  display: inline-block;
+  height: 20px;
+  padding: 0 13px;
+  margin: 7px 17px 0;
+  border-radius: 20px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.navbar .list .item:hover span,
+.navbar .list .item.active span {
+  background-color: #9B0909;
+}
